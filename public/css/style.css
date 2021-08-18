@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
+* {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+body {
+  height: 100vh;
+  overflow: hidden;
+  font-size: 2em;
+  background-color: #39375b;
+  color: #f3f3f3;
+}
+main {
+  height: 100vh;
+}
+section {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  transition: 0.5s linear;
+}
+h1 {
+  margin: 20px 0;
+  text-align: center;
+}
+table h1 {
+  text-align: left;
+}
+.intro h1 {
+  font-size: 3em;
+}
+li {
+  list-style: none;
+}
+a {
+  color: #f5b0cb;
+  text-decoration: none;
+}
+p {
+  margin: 20px 0;
+}
+
+.intro p {
+  max-width: 50%;
+  text-align: center;
+}
+p button {
+  background-color: transparent;
+  color: inherit;
+  border: none;
+  cursor: pointer;
+}
+.resume {
+  background-color: #745c97;
+}
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.float {
+  animation: float 2s infinite;
+}
+.resume {
+  padding: 20px;
+  overflow-y: auto;
+}
+.table {
+  font-size: initial;
+  max-width: 1000px;
+  height: 900px;
+  overflow: auto;
+}
+td {
+  padding: 10px;
+  border: 0;
+}
+.resume-head {
+  background-color: #dc6acf;
+}
+@media (max-width: 800px) {
+  body {
+    font-size: initial;
+  }
+}
